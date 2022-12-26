@@ -16,8 +16,6 @@ menu__settings:
       url: '/blog/'
     - title: 'Authors'
       url: '/authors/'
-    - title: 'Episodes'
-      url: '/videos/'
 
 
 #-------------------------------
@@ -45,7 +43,7 @@ blog__settings:
 #-------------------------------
 # Videos Section Settings
 videos__settings:
-  enable: true
+  enable: false
   videos__title: Latest Videos
   videos__description:
 
@@ -60,7 +58,7 @@ tag__settings:
 #-------------------------------
 # Author Section Settings
 author__section:
-  enable: false
+  enable: true
   author__section__title: Hello, my name is Alena. I’m reviewer and content creator.
   author__section__description: I’m a published content creator, brand copywriter, photographer, and social media content creator and manager. I help brands connect with their customers by developing engaging content that entertains, educates, and offers value to their audience.
   aurhor__section__button__text: More About Me

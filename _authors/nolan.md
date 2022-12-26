@@ -1,6 +1,6 @@
 ---
-username: nolan
-name: Nolan Bergson
+username: Cloud Native on AWS
+name: Cloud Native on AWS
 image: '/images/02-1.jpg'
 cover: '/images/07.jpg'
 location: New York

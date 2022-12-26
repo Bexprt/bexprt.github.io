@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  Keep smiling, because life is a beautiful thing and there's so much to smile about
+title: "Episode 1: The Infrastructure"
 description:
 date:   2021-09-10 15:01:35 +0300
-author: nolan
+author: Cloud Native on AWS
 image:  '/images/17.jpg'
-tags:   [travel, oregon]
+tags:   [aws, cloud native, infrastructure]
 tags_color: '#477690'
 ---
 In operant conditioning, a reinforcement (by reward) or instead a punishment is given after a given behavior, changing the frequency and/or form of that behavior. Stimulus present when the behavior/consequence occurs come to control these behavior modifications.

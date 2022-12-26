@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  If you really look closely, most overnight successes took a long time
+title: "Episode 2: Deploying to AKS"
 date:   2021-09-09 15:01:35 +0300
-author: alena
+author: Cloud Native on Azure
 image:  '/images/18.jpg'
-tags:   [travel, california]
+tags:   [azure, cloud native, ci/cd]
 tags_color: '#814628'
 ---
 In operant conditioning, a reinforcement (by reward) or instead a punishment is given after a given behavior, changing the frequency and/or form of that behavior. Stimulus present when the behavior/consequence occurs come to control these behavior modifications.
