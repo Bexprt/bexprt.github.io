@@ -37,7 +37,7 @@ hero:
 # Blog Section Settings
 blog__settings:
   enable: true
-  blog__title: Latest Posts
+  blog__title: Latest Episodes
   blog__description:
 
 

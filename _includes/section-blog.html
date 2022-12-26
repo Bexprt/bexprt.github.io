@@ -10,7 +10,7 @@
         <div class="section__info">
           <div class="section__head">
             <h2 class="section__title">{{ site.data.settings.blog__settings.blog__title }}</h2>
-            <a class="section__link" href="{{ '/blog' | relative_url }}">See all posts<i class="ion ion-md-arrow-forward"></i></a>
+            <a class="section__link" href="{{ '/blog' | relative_url }}">See all episodes<i class="ion ion-md-arrow-forward"></i></a>
           </div>
           {% if site.data.settings.blog__settings.blog__description %}
             <p class="section__description">{{ site.data.settings.blog__settings.blog__description }}</p>
@@ -77,7 +77,6 @@
                           {% else %}
                             <a class="article__author__name" href="{{site.baseurl}}/about/">{{site.data.settings.author.author__name}}</a>
                           {% endif %}
-                          <time class="article__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
                         </div>
                       </div>
 
