@@ -1,6 +1,6 @@
 ---
-title: "Posts by Category"
+title: "Depicted Series"
 layout: categories
-permalink: /categories/
-author_profile: true
+permalink: /series/
+author_profile: false
 ---
