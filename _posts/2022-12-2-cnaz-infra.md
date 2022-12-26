@@ -1,5 +1,5 @@
 ---
-title: "Episode 1: The Infrastructure"
+title: "Cloud Native on Azure - Episode 1: The Infrastructure"
 categories:
   - Cloud Native on Azure
 tags:

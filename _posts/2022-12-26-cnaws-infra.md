@@ -1,5 +1,5 @@
 ---
-title: "Episode 1: The Infrastructure"
+title: "Cloud Native on AWS - Episode 1: The Infrastructure"
 categories:
   - Cloud Native on AWS
 tags:
