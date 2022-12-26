@@ -12,10 +12,10 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Series'
+    - title: 'Episodes'
       url: '/blog/'
-    - title: 'Authors'
-      url: '/authors/'
+    - title: 'Series'
+      url: '/series/'
 
 
 #-------------------------------
@@ -52,7 +52,7 @@ videos__settings:
 # Tag Section Settings
 tag__settings:
   enable: true
-  tag: travel # To display the tag section, specify your favorite tag.
+  tag: Cloud Native on Azure # To display the tag section, specify your favorite tag.
 
 
 #-------------------------------
@@ -81,7 +81,7 @@ mailchimp__settings:
 
 #-------------------------------
 # Footer Settings
-footer__description: Cloud. Depicted!
+footer__description: Drill down into Cloud Concepts
 
 # Social Links
 
