@@ -32,12 +32,17 @@ hero:
 # Author Global Settings
 
 
+#-------------------------------
+# Series Section Settings
+series__settings:
+  enable: true
+  title: Series
 
 #-------------------------------
 # Blog Section Settings
 blog__settings:
   enable: true
-  blog__title: Latest Episodes
+  blog__title: Latest episodes
   blog__description:
 
 
