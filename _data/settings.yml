@@ -52,7 +52,7 @@ videos__settings:
 # Tag Section Settings
 tag__settings:
   enable: true
-  tag: Cloud Native on Azure # To display the tag section, specify your favorite tag.
+  tag: cloud-native # To display the tag section, specify your favorite tag.
 
 
 #-------------------------------
