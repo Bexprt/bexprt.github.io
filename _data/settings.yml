@@ -2,7 +2,7 @@
 # Site Settings
 title: Depicted Cloud
 logo: # You can add own logo. For example '/images/logo.png'.
-description: Drill down into Cloud Concepts
+description: Visual drill down into various Cloud Concepts
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
