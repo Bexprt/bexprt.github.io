@@ -12,10 +12,11 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Episodes'
-      url: '/blog/'
     - title: 'Series'
       url: '/series/'
+    - title: 'Episodes'
+      url: '/blog/'
+
 
 
 #-------------------------------
