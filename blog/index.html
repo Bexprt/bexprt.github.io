@@ -1,64 +1,36 @@
 ---
 layout: default
 title: Blog
-description: Made includes a beautiful grid-based blog with pagination.
-featured_image: /images/social.jpg
+description: Laruso blog features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!
 ---
 
-<div class="page-blog">
-	<header class="header--single">
-		<div class="wrap">
-			<h1 class="header__title">Blog</h1>
-			<p class="header__subtitle subtitle--light">Find out what I've been up through my latest photo blogging adventures.</p>
-		</div>
-	</header>
+<!-- begin hero -->
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="hero__inner">
+          <h1 class="hero__title">{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.blog__settings.blog__title }}{% endif %}</h1>
+          {% if page.description %}
+            <p class="hero__description">{{ page.description }}</p>
+          {% else site.data.settings.blog__settings.blog__description %}
+            <p class="hero__description">{{ site.data.settings.blog__settings.blog__description }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->
 
-	<section class="all-posts">
-		<div class="wrap">
-			<div class="posts__list grid">
-				{% for post in paginator.posts %}
-				{% if forloop.first == true %}
-				<article class="post post-new">
-					<div class="grid">
-						<a href="{{ post.url | relative_url }}">
-							<div class="post__image{% if paginator.page == 1 %} post__image--new{% endif %}"
-								style="background-image: url({{ post.featured_image | relative_url }})">
-							</div>
-						</a>
-
-						<div class="post__content-wrap">
-							<div class="post__content">
-								<time class="post__date label--small">{{ post.date | date: "%B %d, %Y" }}</time>
-								<h2 class="post__title h4"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-								<p class="post__subtitle">{{ post.subtitle }}</p>
-								<p class="post__description">{{ post.description }}</p>
-								<a href="{{ post.url | relative_url }}" class="post__link button--text--accent --right">Keep Reading</a>
-							</div>
-						</div>
-					</div>
-				</article>
-				{% else %}
-				{% include component__post-preview.html %}
-				{% endif %}
-				{% endfor %}
-			</div>
-		</div>
-	</section>
-
-	{% if paginator.total_pages > 1 %}
-
-	<section class="pagination">
-		<div class="wrap">
-			{% if paginator.previous_page %}
-			<a href="{{ paginator.previous_page_path | relative_url }}"
-				class="button--text--accent --left pagination__prev">Newer Posts</a>
-			{% endif %}
-			{% if paginator.next_page %}
-			<a href="{{ paginator.next_page_path | relative_url }}"
-				class="button--text--accent --right pagination__next">Older Posts</a>
-			{% endif %}
-		</div>
-	</section>
-
-	{% endif %}
+<div class="container animate">
+  <div class="row">
+    {% if site.posts.size > 0 %}
+      {% for post in paginator.posts offset:0 %}
+        {% include article.html %}
+      {% endfor %}
+    {% endif %}
+  </div>
 </div>
+
+{% include pagination.html %}
