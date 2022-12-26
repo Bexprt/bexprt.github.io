@@ -6,6 +6,7 @@ tags:
   - infrastructure
   - cloud native
   - azure
+featured_image: '/images/demo.jpg'
 ---
 
 Abbott: Strange as it may seem, they give ball players nowadays very peculiar names.
