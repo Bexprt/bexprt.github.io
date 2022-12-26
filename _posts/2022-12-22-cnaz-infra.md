@@ -1,10 +1,11 @@
 ---
-title: "Post: Chat"
+title: "Episode 1: The Infrastructure"
 categories:
-  - Blog
+  - Cloud Native on Azure
 tags:
-  - chat
-  - Post Formats
+  - infrastructure
+  - cloud native
+  - azure
 ---
 
 Abbott: Strange as it may seem, they give ball players nowadays very peculiar names.

@@ -1,5 +1,5 @@
 main:
   - title: "Series"
-    url: /posts/
+    url: /series/
   - title: "Tags"
-    url: /tags/
+    url: /episodes/
