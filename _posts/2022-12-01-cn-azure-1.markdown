@@ -10,13 +10,17 @@ tags_color: '#b25642'
 ---
 
 ## Watch the episode
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k4kupW_P5l8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
+
 ## Follow-up concepts
+
 * [Infrastructure as Code](https://learn.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code)
 * [Continuous Deployment](https://learn.microsoft.com/en-us/devops/deliver/what-is-continuous-delivery)
 * [Azure Resource Groups](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
 * [Azure AD: Workload Identity Federation](https://learn.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation)
-<br/>
+
 ## Go deeper
+
 The code referenced in this video can be found here: [https://github.com/melzayet/azure-cn-depicted](https://github.com/melzayet/azure-cn-depicted)
