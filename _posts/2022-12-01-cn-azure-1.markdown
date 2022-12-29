@@ -8,61 +8,66 @@ image: '/images/02.jpg'
 tags: [azure, cloud-native, infrastructure]
 tags_color: '#b25642'
 ---
-In operant conditioning, a reinforcement (by reward) or instead a punishment is given after a given behavior, changing the frequency and/or form of that behavior. Stimulus present when the behavior/consequence occurs come to control these behavior modifications.
+## GOAL 1: Build Scripted and Dynamic Infrastructure
+<br/>
 
-Observational learning is learning that occurs through observing the behavior of others. It is a form of social learning which takes various forms, based on various processes. In humans, this form of learning seems to not need reinforcement to occur, but instead, requires a social model such as a parent, sibling, friend, or teacher with surroundings.
+#### **A. GRASP THE GOAL:**
+Start with the below video:
+<a href="https://www.youtube.com/watch?v=0TlrXEC-Gjs" target="_blank"><img src="../images/infra-workflow.jpg" alt="Ep.1: Infrastructure" /></a>
 
-> The longer I live, the more I realize that I am never wrong about anything, and that all the pains I have so humbly taken to verify my notions have only wasted my time!
+#### **B. MAKE SURE YOU UNDERSTAND THESE CONCEPTS (STAY FOCUSED ON THE GOAL):**
+* [Infrastructure as Code](https://learn.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code)
+* [Continuous Deployment](https://learn.microsoft.com/en-us/devops/deliver/what-is-continuous-delivery)
+* [Azure Resource Groups](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
+* [Azure AD: Workload Identity Federation](https://learn.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation)
 
-Imprinting is a kind of learning occurring at a particular life stage that is rapid and apparently independent of the consequences of behavior. In filial imprinting, young animals, particularly birds, form an association with another individual or in some cases, an object, that they respond to as they would to a parent. In 1935, the Austrian Zoologist Konrad Lorenz discovered that certain birds follow and form a bond if the object makes sounds.
+#### **C. INSPECT FILES OR TRY IT YOURSELF (IF POSSIBLE):**
+#### 1. Fork the repository
+This will allow you to set secret and run your own workflows. Click [here](https://github.com/melzayet/azure-cn-depicted/fork) to fork.
 
-### Formal learning
+#### 2. Review/Tweak Bicep templates
+In this step, we use VS Code to author Bicep templates. We will create an "AKS" and "Container Apps" folder for those templates.
+Review those templates and feel free to change their configuration if needed.
 
-These five types of play are often intersecting. All types of play generate thinking and problem-solving skills in children. Children learn to think creatively when they learn through play. Specific activities involved in each type of play change over time as humans progress through the lifespan. Play as a form of learning, can occur solitarily, or involve interacting.
+#### 3. Review GitHub workflows
+Workflows under ".github/workflows" folder will help automate the deployment of infrastructure and apps:
 
-Enculturation is the process by which people learn values and behaviors that are appropriate or necessary in their surrounding culture. This is different from acculturation, where a person adopts the values and societal rules of a culture different from their native.
+- Deploy AKS infrastructure: aks-cluster-deploy.yml
+- Setup AKS cluster: aks-cluster-setup.yml
+- Deploy AKS app: aks-app-deploy.yml
+- Setup Container Apps infrastructure: aca-infra-deploy.yml
+- Deploy Container Apps application: aca-app-deploy.yml
 
-- [Nonformal learning](https://www.wikipedia.org) and combined approaches
-- [Reading directions](https://www.wikipedia.org) helps a player learn the patterns that solve the Rubik's Cube
-- [Practicing the moves repeatedly](https://www.wikipedia.org) helps build "muscle memory" and speed.
-- [Thinking critically about moves](https://www.wikipedia.org) helps find shortcuts, which speeds future attempts.
-- [Observing the Rubik's Cube's six colors help anchor solutions in the mind.](https://www.wikipedia.org)
-- [Revisiting the cube occasionally helps retain the skill.](https://www.wikipedia.org)
+Review these workflows: "aca-infra-deploy.yml" and "aks-cluster-deploy.yml"
 
-Electronic learning or e-learning is computer-enhanced learning. A specific and always more diffused e-learning is mobile learning (m-learning), which uses different mobile telecommunication equipment, such as cellular phones.
+#### 4. Setup deployment and app identity
+Deployment identity is what GitHub will use to deploy to Azure. Follow the steps [here](https://learn.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation-create-trust?pivots=identity-wif-apps-methods-azp#github-actions) to create this identity. Please make a note of the Azure AD app's Client ID and the Object ID of the associated Enterprise app.
 
-![Room]({{site.baseurl}}/images/30.jpg)
-*Photo by [Priscilla Du Preez](https://unsplash.com/photos/vZb2zeAhmAc) on [Unsplash](https://unsplash.com/)*
-
-When a learner interacts with the e-learning environment, it's called augmented learning. By adapting to the needs of individuals, the context-driven instruction can be dynamically tailored to the learner's natural environment. Augmented digital content may include text, images, video, audio (music and voice). By personalizing instruction, augmented learning has been shown to improve learning performance for a lifetime. See also minimally invasive.
-
-Rote learning is memorizing information so that it can be recalled by the learner exactly the way it was read or heard. The major technique used for rote learning is learning by repetition, based on the idea that a learner can recall the material exactly (but not its meaning) if the information is repeatedly processed. Rote learning is used in diverse areas, from mathematics to music to religion. Although it has been criticized by some educators, rote learning is a necessary precursor to meaningful learning.
-
-<div class="gallery-box">
-  <div class="gallery gallery--post">
-    <img src="/images/32.jpg" loading="lazy" alt="Mountains">
-    <img src="/images/33.jpg" loading="lazy" alt="Woman">
-    <img src="/images/34.jpg" loading="lazy" alt="Subway">
-    <img src="/images/35.jpg" loading="lazy" alt="City">
-  </div>
-  <em>Gallery / <a href="https://unsplash.com/" target="_blank">Unsplash</a></em>
-</div>
+We will follow the same steps to create an App Identity. It's what AKS will use to access Key Vault, Cosmos DB or Storage Account. Please make a note of the Azure AD app's Client ID, and the Object ID of the associated Enterprise app. No need to create a federated credential for this app yet.
 
 
-Nonformal learning is organized learning outside the formal learning system. For example, learning by coming together with people with similar interests and exchanging viewpoints, in clubs or in (international) youth organizations, workshops.
+#### 5. Setup deployment target
+Create an Azure Resource Group to hold the AKS infrastructure and app resources. It's also a scope for permissions. Make the deployment identity created in step 4, as an Owner for this resource group. Please make a note of the resource group name.
 
-Informal learning is less structured than "nonformal" one. It may occur through the experience of day-to-day situations (for example, one would learn to look ahead while walking because of the danger inherent in not paying attention to where one is going). It is learning from life, during a meal at the table with parents, play, exploring, etc.
+Repeat the same steps for Container Apps if you want to try the service.
 
-> Sing like no one’s listening, love like you’ve never been hurt, dance like nobody’s watching, and live like it’s heaven on earth.
+#### 6. Set parameters
+Set the following GitHub secrets using the steps [here](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository):
 
-The educational system may use a combination of formal, informal, and nonformal learning methods. The UN and EU recognize these different forms of learning (cf. links below). In some schools, students can get points that count in the formal-learning systems if they get work done in informal-learning circuits. They may be given time to assist international youth workshops and training courses, on the condition they prepare, contribute, share, and can prove this offered valuable new insight, helped to acquire new skills, a place to experience.
+- AKS_ADMIN_GROUP_ID: ID of an Azure AD Group that can access and administrate the AKS cluster if needed
+- AKS_RG: The resource group name for AKS noted in step 5
+- APP_IDENTITY_CLIENT_ID: The Client ID for App Identity created in step 4.
+- APP_IDENTITY_PRINCIPAL_ID: The Object ID for App Identity's Enterprise App in Azure AD
+- DEPLOY_IDENTITY_CLIENT_ID: The Client ID for Deploy Identity created in step 4.
+- DEPLOY_IDENTITY_PRINCIPAL_ID: The Object ID for Deploy Identity's Enterprise App in Azure AD
+- SUBSCRIPTION_ID: The Subscription ID to deploy infrastructure and where resource group(s) were created
+- TENANT_ID: Azure AD Tenant ID
+- ACA_RG: The resource group name for Container Apps noted in step 5
+- ACA_ENV_NAME: A name for Container Apps environment
+- APP_DNS_NAME:  DNS prefix to use for deploying apps later. This needs to be a unique name and DNS friendly
 
-### Internal factors
+#### 7. Run the first deployment
+Either by commiting changes to GitHub or running workflows [directly](https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow), we can deploy our infrasructure resources
 
-Play, as it pertains to humans as a form of learning is central to a child's learning and development. Through play, children learn social skills such as sharing and collaboration. Children develop emotional skills such as learning to deal with the emotion of anger, through play activities. As a form of learning, play also facilitates the development of thinking and language skills in children.
-
-<p><iframe src="https://player.vimeo.com/video/148003889?h=d36b8b4cbb" loading="lazy" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
-
-Transfer of learning is the application of skill, knowledge or understanding to resolve a novel problem or situation that happens when certain conditions are fulfilled. Research indicates that learning transfer is infrequent; most common when "... cued, primed, and guided..." and has sought to clarify what it is, and how it might be promoted through.
-
-In incidental teaching learning is not planned by the instructor or the student, it occurs as a byproduct of another activity — an experience, observation, self-reflection, interaction, unique event, or common routine task. This learning happens in addition to or apart from the instructor's plans and the student's expectations. An example of incidental teaching.
+- AKS workflow name: 'Trigger auto deployment for AKS cluster deployment'
+- Container Apps workflow name: 'Trigger auto deployment for Azure Container Apps'
