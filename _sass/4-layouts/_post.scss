@@ -512,6 +512,59 @@
   }
 }
 
+
+.post__more {
+  margin-bottom: 120px;
+  grid-gap: 20px;
+
+  a {
+    padding: 32px 30px;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .prev-post::before,
+  .next-post::before {
+    display: block;
+    @extend .label--small;
+    margin-bottom: 8px;
+  }
+
+  .prev-post::before {
+    content: "Previous Post";
+  }
+
+  .next-post::before {
+    content: "Next Post";
+  }
+
+  .prev-post::after,
+  .next-post::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 12px;
+    background: url($baseurl + "/images/icons/arrow-left-gray.svg") center center no-repeat;
+    position: absolute;
+    top: calc(50% - 6px);
+  }
+
+  .next-post::after {
+    right: 30px;
+    transform: rotate(180deg);
+  }
+
+  .prev-post {
+    text-align: right;
+  }
+
+  @include mq(tabletp) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
 /* 404 */
 .error {
   text-align: center;
