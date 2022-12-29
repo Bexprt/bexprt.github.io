@@ -38,7 +38,7 @@ series__settings:
   enable: true
   title: Series
   description: Set of related episodes in a cloud technology area
-
+  
 #-------------------------------
 # Blog Section Settings
 blog__settings:
