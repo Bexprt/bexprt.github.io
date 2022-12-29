@@ -15,6 +15,22 @@ layout: default
         </div>
       {% endif %}
 
+      <div class="container">
+        <div class="card-author">
+        
+          <div class="card-author__content">
+            <div class="card-author__role">Series:</div>
+              {% if author %}
+              <h3 class="card-author__name"><a href="{{ author.url }}" class="card-author__link">{{ author.name }}</a></h3>
+              <p class="card-author__description">{{ author.content }}</p>
+              {% else %}
+              <h3 class="card-author__name"><a href="{{site.baseurl}}/about/" class="card-author__link">{{ site.data.settings.author.author__name }}</a></h3>
+              <p class="card-author__description">{{ site.data.settings.author.author__name.author__bio }}</p>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+
       <h1 class="post__title">{{ page.title | escape }}</h1>
 
       {% if page.description %}
