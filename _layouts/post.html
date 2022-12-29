@@ -97,7 +97,8 @@ layout: default
     {% if page.previous.url and page.previous.author.name == author.name %}
     <a class="prev-post subtitle" href="{{ page.previous.url | relative_url }}">{{page.previous.title}}</a>
     {% endif %}
-    {% if page.next.url and page.next.author.name == author.name %}
+    {% if page.next.url %}
+    <script type="javascript">console.log({{ page.next }});</script
     <a class="next-post subtitle" href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>
     {% endif %}
   </div>
