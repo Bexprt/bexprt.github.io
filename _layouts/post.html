@@ -20,6 +20,10 @@ layout: default
       {% if page.description %}
         <div class="post__description">{{ page.description }}</div>
       {% endif %}
+
+      <div class="post__meta">
+        {% assign author = site.authors | where: 'username', page.author | first %}    
+      </div>
     </div>
 
   </div>

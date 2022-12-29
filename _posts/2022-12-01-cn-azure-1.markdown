@@ -10,7 +10,7 @@ tags_color: '#b25642'
 ---
 
 ## Watch the episode
-<a href="https://www.youtube.com/watch?v=0TlrXEC-Gjs" target="_blank"><img src="../images/infra-workflow.jpg" alt="Ep.1: Infrastructure" /></a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k4kupW_P5l8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Follow-up concepts
 * [Infrastructure as Code](https://learn.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code)
@@ -19,4 +19,4 @@ tags_color: '#b25642'
 * [Azure AD: Workload Identity Federation](https://learn.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation)
 
 ## Go deeper
-The code referenced in this video can be found here: https://github.com/melzayet/azure-cn-depicted
+The code referenced in this video can be found here: [https://github.com/melzayet/azure-cn-depicted](https://github.com/melzayet/azure-cn-depicted)
