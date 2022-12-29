@@ -36,7 +36,7 @@ hero:
 # Series Section Settings
 series__settings:
   enable: true
-  title: Series
+  title: Latest series
   description: Set of related episodes in a cloud technology area
   
 #-------------------------------
