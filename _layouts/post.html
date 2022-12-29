@@ -16,21 +16,21 @@ layout: default
       {% endif %}
 
       <h1 class="post__title">{{ page.title | escape }}</h1>
+      {% assign author = site.authors | where: 'username', page.author | first %}        
+      <div class="post__meta__bottom">
+        {% if author %}
+        <a class="post__author__name" href="{{ author.url }}">{{ author.name }}</a>
+        {% else %}
+          <a class="post__author__name" href="{{site.baseurl}}/about/">{{ site.data.settings.author.author__name }}</a>
+        {% endif %}
+        </div>
 
       {% if page.description %}
         <div class="post__description">{{ page.description }}</div>
       {% endif %}
 
       <div class="post__meta">
-        {% assign author = site.authors | where: 'username', page.author | first %}
-        <div class="card-author__role">Series:</div>
-        <div class="post__meta__bottom">
-          {% if author %}
-            <a class="post__author__name" href="{{ author.url }}">{{ author.name }}</a>
-          {% else %}
-            <a class="post__author__name" href="{{site.baseurl}}/about/">{{ site.data.settings.author.author__name }}</a>
-          {% endif %}
-        </div>
+        
       </div>
     </div>
 
