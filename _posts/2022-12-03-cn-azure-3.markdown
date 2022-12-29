@@ -5,7 +5,7 @@ date:   2022-12-03 05:01:35 +0300
 author: Cloud Native on Azure
 image:  '/images/ep2-cn-azure.png'
 tags:   [azure, cloud-native, CI/CD]
-tags_color: '#814628'
+tags_color: '#007FFF'
 ---
 In operant conditioning, a reinforcement (by reward) or instead a punishment is given after a given behavior, changing the frequency and/or form of that behavior. Stimulus present when the behavior/consequence occurs come to control these behavior modifications.
 

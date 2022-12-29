@@ -6,7 +6,7 @@ date: 2022-12-01 15:01:35 +0300
 author: Cloud Native on Azure
 image: '/images/ep1-cn-azure.png'
 tags: [azure, cloud-native, infrastructure]
-tags_color: '#b25642'
+tags_color: '#007FFF'
 ---
 
 ## Watch the episode
