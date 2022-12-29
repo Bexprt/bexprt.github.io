@@ -4,7 +4,7 @@ title: "Episode 1: The Infrastructure"
 description: These complex processes, called physiological functions, have underlying physical and chemical bases, as well as signaling and control mechanisms that are essential to maintaining life.
 date: 2022-12-01 15:01:35 +0300
 author: Cloud Native on Azure
-image: '/images/infra-workflow.jpg'
+image: '/images/infra-workflow-blog.jpg'
 tags: [azure, cloud-native, infrastructure]
 tags_color: '#b25642'
 ---
