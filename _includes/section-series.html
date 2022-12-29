@@ -24,8 +24,10 @@
           <div class="article col {% if forloop.index == 1 and page.url == '/' %}col-12 article--first{% else %}col-6 col-w-10 col-d-12{% endif %}">
             <div class="article__inner">
 
-              <div class="article__head">                
-                <img class="lazy author__big__image" data-src="{{ series.image }}" alt="{{ site.data.settings.author.author__name }}">                    
+              <div class="article__head">      
+                <a href="{{ post.url | prepend: site.baseurl }}" class="article__image" aria-hidden="true" tabindex="-1">
+                  <img class="lazy" data-src="{{site.baseurl}}{{series.image}}" alt="{{series.name}}">
+                </a>          
               </div>
 
               <div class="article__content">
