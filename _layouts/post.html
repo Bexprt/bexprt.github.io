@@ -94,7 +94,7 @@ layout: default
   </div>
 
   <div class="card-author post__more grid" style="display:grid; padding:50px;">
-    {% if page.previous.url %}
+    {% if page.previous.url  and page.previous.author == author.name %}
     <a class="prev-post subtitle" href="{{ page.previous.url | relative_url }}">{{page.previous.title}}</a>
     {% endif %}
     {% if page.next.url and page.next.author == author.name %}
