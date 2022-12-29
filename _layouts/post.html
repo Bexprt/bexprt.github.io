@@ -15,23 +15,6 @@ layout: default
         </div>
       {% endif %}
 
-      <div class="container">
-        <div class="card-author" style="padding: 10px;">
-        
-          <div class="card-author__content">
-            {% assign author = site.authors | where: 'username', page.author | first %}    
-            <div class="card-author__role">Series:</div>
-              {% if author %}
-              <h3 class="card-author__name"><a href="{{ author.url }}" class="card-author__link">{{ author.name }}</a></h3>
-              <p class="card-author__description">{{ author.content }}</p>
-              {% else %}
-              <h3 class="card-author__name"><a href="{{site.baseurl}}/about/" class="card-author__link">{{ site.data.settings.author.author__name }}</a></h3>
-              <p class="card-author__description">{{ site.data.settings.author.author__name.author__bio }}</p>
-              {% endif %}
-          </div>
-        </div>
-      </div>
-
       <h1 class="post__title">{{ page.title | escape }}</h1>
 
       {% if page.description %}
@@ -39,7 +22,15 @@ layout: default
       {% endif %}
 
       <div class="post__meta">
-       
+        {% assign author = site.authors | where: 'username', page.author | first %}
+        <div class="card-author__role">Series:</div>
+        <div class="post__meta__bottom">
+          {% if author %}
+            <a class="post__author__name" href="{{ author.url }}">{{ author.name }}</a>
+          {% else %}
+            <a class="post__author__name" href="{{site.baseurl}}/about/">{{ site.data.settings.author.author__name }}</a>
+          {% endif %}
+        </div>
       </div>
     </div>
 
