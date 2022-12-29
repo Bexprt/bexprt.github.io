@@ -37,7 +37,7 @@
                   <a href="{{ series.url | prepend: site.baseurl }}">{{ series.title }}</a>
                 </h2>
 
-                <p class="article__excerpt">{% if series.description %}{{ series.description }}</p>
+                <p class="article__excerpt">{% if series.description %}{{ series.description }}{% endif %}</p>
 
               </div>
             </div>
