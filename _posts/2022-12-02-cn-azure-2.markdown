@@ -3,7 +3,7 @@ layout: post
 title: "Episode 2: Deploying to AKS"
 date:   2022-12-02 15:01:35 +0300
 author: Cloud Native on Azure
-image:  '/images/18.jpg'
+image:  '/images/ep2-cn-azure.png'
 tags:   [azure, cloud-native, CI/CD]
 tags_color: '#814628'
 ---
