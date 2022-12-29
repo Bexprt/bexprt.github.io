@@ -11,7 +11,8 @@ tags_color: '#b25642'
 
 ## Watch the episode
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k4kupW_P5l8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k4kupW_P5l8" title="Episode 1: The Infrastructure" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <br/>
 
 ## Follow-up concepts
