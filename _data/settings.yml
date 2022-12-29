@@ -37,15 +37,14 @@ hero:
 series__settings:
   enable: true
   title: Latest series
-  description: Set of related episodes in a cloud technology area
+  description: A set of related episodes covering a cloud technology area
   
 #-------------------------------
 # Blog Section Settings
 blog__settings:
   enable: true
   blog__title: Latest episodes
-  blog__description:
-
+  blog__description: Each episode focuses on one common cloud goal
 
 #-------------------------------
 # Videos Section Settings
@@ -93,7 +92,7 @@ mailchimp__settings:
 
 #-------------------------------
 # Footer Settings
-footer__description: Drill down into Cloud Concepts
+footer__description: A visual drill down into various Cloud concepts
 
 # Social Links
 
@@ -106,6 +105,10 @@ footer__menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
+    - title: 'Series'
+      url: '/series/'
+    - title: 'Episodes'
+      url: '/blog/'
 
 
 #-------------------------------
