@@ -537,8 +537,7 @@ $mq: ( $mobile:$columns, $tablet:$columns, $desktop:$columns );
 
   .prev-post::before,
   .next-post::before {
-    display: block;
-    @extend .label--small;
+    display: block;    
     margin-bottom: 8px;
   }
 
