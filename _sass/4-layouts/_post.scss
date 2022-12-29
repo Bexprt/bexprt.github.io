@@ -1,3 +1,7 @@
+$border-color: '{{ site.data.settings.color_settings.border_color }}';
+$baseurl: '{{ site.baseurl }}';
+
+
 /* Post + Page */
 .post-head,
 .page-head {
