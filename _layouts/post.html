@@ -15,8 +15,6 @@ layout: default
         </div>
       {% endif %}
 
-      <h1 class="post__title">{{ page.title | escape }}</h1>
-      
       <div class="post__meta">        
         {% assign author = site.authors | where: 'username', page.author | first %}        
         <div class="post__meta__bottom">
@@ -27,6 +25,8 @@ layout: default
           {% endif %}
           </div>
       </div>
+      
+      <h1 class="post__title">{{ page.title | escape }}</h1>      
 
       {% if page.description %}
         <div class="post__description">{{ page.description }}</div>
