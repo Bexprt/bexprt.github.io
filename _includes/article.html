@@ -28,10 +28,6 @@
       </div>
       {% endif %}
 
-      <h2 class="article__title">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-
       <div class="article__meta">
         {% assign author = site.authors | where: 'username', post.author | first %}
         <div class="article__meta__bottom">
@@ -42,6 +38,10 @@
           {% endif %}
         </div>
       </div>
+
+      <h2 class="article__title">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
 
       <p class="article__excerpt" style="margin-bottom:0px">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 160 }}{% endif %}</p>
     </div>
