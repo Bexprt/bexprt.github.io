@@ -542,11 +542,11 @@ $mq: ( $mobile:$columns, $tablet:$columns, $desktop:$columns );
   }
 
   .prev-post::before {
-    content: "Previous Post";
+    content: "PREVIOUS POST";
   }
 
   .next-post::before {
-    content: "Next Post";
+    content: "NEXT POST";
   }
 
   .prev-post::after,
