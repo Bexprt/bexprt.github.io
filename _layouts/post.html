@@ -16,9 +16,10 @@ layout: default
       {% endif %}
 
       <div class="container">
-        <div class="card-author">
+        <div class="card-author" style="padding: 10px;">
         
           <div class="card-author__content">
+            {% assign author = site.authors | where: 'username', page.author | first %}    
             <div class="card-author__role">Series:</div>
               {% if author %}
               <h3 class="card-author__name"><a href="{{ author.url }}" class="card-author__link">{{ author.name }}</a></h3>
@@ -38,7 +39,7 @@ layout: default
       {% endif %}
 
       <div class="post__meta">
-        {% assign author = site.authors | where: 'username', page.author | first %}    
+       
       </div>
     </div>
 
