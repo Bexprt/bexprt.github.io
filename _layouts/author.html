@@ -16,7 +16,7 @@ layout: default
 <section class="author">
 
   <div class="container">
-    {% assign post_count = site.posts | where: 'author', page.username %}
+    {% assign post_count = site.posts | where: 'author', page.username | sort: 'date' %}
 
     <div class="author__content">
       <div class="author__image"><img class="lazy" data-src="{{ page.image }}" alt="{{ page.name }}"></div>
