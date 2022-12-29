@@ -24,16 +24,6 @@ layout: default
       <div class="post__meta">
         {% assign author = site.authors | where: 'username', page.author | first %}
 
-        {% if author %}
-        <a href="{{ author.url }}" class="post__author__image">
-          <img class="lazy" data-src="{{ author.image }}" alt="{{ author.name }}">
-        </a>
-        {% else %}
-        <a href="{{site.baseurl}}/about/" class="post__author__image">
-          <img class="lazy" data-src="{{site.data.settings.author.author__avatar}}" alt="{{site.data.settings.author.author__name}}">
-        </a>
-        {% endif %}
-
         <div class="post__meta__bottom">
           {% if author %}
             <a class="post__author__name" href="{{ author.url }}">{{ author.name }}</a>
@@ -90,17 +80,6 @@ layout: default
 
 <div class="container">
   <div class="card-author">
-    <div class="card-author__media">
-      {% if author %}
-      <a class="card-author__image" href="{{ author.url }}">
-        <img class="lazy" data-src="{{ author.image }}" alt="{{ author.name }}">
-      </a>
-      {% else %}
-      <a class="card-author__image" href="{{ author.url }}">
-        <img class="lazy" data-src="{{site.baseurl}}/about/" alt="{{site.data.settings.author.author__name}}">
-      </a>
-      {% endif %}
-    </div>
   
     <div class="card-author__content">
       <div class="card-author__role">Series:</div>
