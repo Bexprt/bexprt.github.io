@@ -32,12 +32,8 @@
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
 
-      <p class="article__excerpt" style="margin-bottom:0px">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 160 }}{% endif %}</p>
-
       <div class="article__meta">
         {% assign author = site.authors | where: 'username', post.author | first %}
-    
-
         <div class="article__meta__bottom">
           {% if author %}
             <a class="article__author__name" href="{{ author.url }}">{{ author.name }}</a>
@@ -47,6 +43,7 @@
         </div>
       </div>
 
+      <p class="article__excerpt" style="margin-bottom:0px">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 160 }}{% endif %}</p>
     </div>
   </div>
 </div>
