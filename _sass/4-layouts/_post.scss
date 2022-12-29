@@ -574,6 +574,16 @@ $mq: ( $mobile:$columns, $tablet:$columns, $desktop:$columns );
   }
 }
 
+.label, .label--small, .post__more .next-post::before, .post__more .prev-post::before, label, time {
+  font-family: Rubik,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: .8px;
+  color: #aeb3bb;
+  text-transform: uppercase;
+}
+
 
 /* 404 */
 .error {
