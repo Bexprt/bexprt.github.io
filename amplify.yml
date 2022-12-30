@@ -1,0 +1,14 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - gem install jekyll -v 4.2.2 
+        - gem install jekyll-paginate jekyll-sitemap
+        - jekyll b
+  artifacts:
+    baseDirectory: _site
+    files:
+      - '**/*'
+  cache:
+    paths: []
