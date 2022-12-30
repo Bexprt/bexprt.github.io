@@ -35,14 +35,14 @@ hero:
 series__settings:
   enable: true
   title: Latest series
-  description: A set of episodes that gradually drill down or build upon previous concepts
+  description: Grasp a cloud domain, drilling down into deeper layers of depth with every episode
 
 #-------------------------------
 # Blog Section Settings
 blog__settings:
   enable: true
   blog__title: Latest episodes
-  blog__description: Each episode focuses on one common Cloud goal
+  blog__description: Each episode focuses on one goal and adds more depth
 
 #-------------------------------
 # Videos Section Settings
