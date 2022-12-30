@@ -14,8 +14,6 @@ menu__settings:
       url: '/'
     - title: 'Series'
       url: '/series/'
-    - title: 'Episodes'
-      url: '/episode/'
 
 
 
@@ -107,8 +105,6 @@ footer__menu__settings:
       url: '/'
     - title: 'Series'
       url: '/series/'
-    - title: 'Episodes'
-      url: '/episode/'
 
 
 #-------------------------------
