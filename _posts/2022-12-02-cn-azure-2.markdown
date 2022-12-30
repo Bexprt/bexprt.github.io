@@ -5,7 +5,7 @@ description: Our initial infrastructure is in place. We want to put in a repeata
 date:   2022-12-02 15:01:35 +0300
 author: Cloud Native on Azure
 image:  '/images/ep2-cn-azure.png'
-tags:   [azure, cloud-native, CI/CD, AKS]
+tags:   [azure, cloud-native, CI-CD, AKS]
 tags_color: '#007FFF'
 color: '#007FFF'
 ---
