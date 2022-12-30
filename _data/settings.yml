@@ -37,8 +37,8 @@ hero:
 series__settings:
   enable: true
   title: Latest series
-  description: A set of related episodes covering a Cloud area
-  
+  description: A set of episodes that gradually drill down or build upon previous concepts
+
 #-------------------------------
 # Blog Section Settings
 blog__settings:
