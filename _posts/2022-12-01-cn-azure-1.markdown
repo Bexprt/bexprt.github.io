@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Episode 1: The Infrastructure"
-description: Our goal in this episode is to build scripted and dynamic infrastructure. Every time we update any configuration, we want this to be automatically reflected in our Azure envrionment.
+description: Our goal in this episode is to lay the foundation to drill into throughout the series. We start by a scripted and dynamic infrastructure. Every time we update any configuration, we want this to be automatically reflected in our Azure envrionment.
 date: 2022-12-01 15:01:35 +0300
 author: Cloud Native on Azure
 image: '/images/ep1-cn-azure.png'
