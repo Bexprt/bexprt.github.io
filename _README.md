@@ -59,7 +59,7 @@ You'll find this inside the `_data` folder – this is where you can set all of 
 
 **Menu settings**
 
-This allows you to set the links inside your menu. Add each one as a list item with a `title` and `url`. When hosting on GitHub Pages, make sure you leave a trailing `/` at the end of links to category pages (e.g. `/blog/` or `/projects/`).
+This allows you to set the links inside your menu. Add each one as a list item with a `title` and `url`. When hosting on GitHub Pages, make sure you leave a trailing `/` at the end of links to category pages (e.g. `/episode/` or `/projects/`).
 
 **Footer settings**
 `logo_image` – if you'd like to use a logo instead of plain text title in your footer, enter the link to it here.
@@ -144,7 +144,7 @@ This is your website home page. You can edit some details in the Front Matter at
 
 Below the Front Matter is the code for the page. You should edit this to set your title and intro text. Hint - the main <h1> tag respects line breaks on tablet size screens and larger. This is useful if you want to prevent typographic widows.
 
-### The blog page – `/blog/index.html`
+### The blog page – `/episode/index.html`
 
 This is the blog listing page, which shows all your blog posts. You can edit the same things as on the home page to customise it for your website.
 
