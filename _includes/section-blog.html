@@ -68,7 +68,7 @@
                         </div>
                       </div>
 
-                      <p class="article__excerpt" style="margin-bottom: 0px;">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 80 }}{% endif %}</p>                  
+                      <p class="article__excerpt">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 80 }}{% endif %}</p>                  
 
                     </div>
                   </div>
