@@ -17,6 +17,7 @@ tags_color: '#007FFF'
 
 ## Follow-up concepts
 
+* [Azure Container Apps overview](https://learn.microsoft.com/en-us/azure/container-apps/overview)
 * [Set up GitHub Actions with Azure CLI in Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/github-actions-cli?tabs=bash)
 
 ## Go deeper
