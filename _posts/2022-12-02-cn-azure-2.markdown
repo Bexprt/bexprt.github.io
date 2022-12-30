@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Episode 2: Deploying to AKS"
-description: Our initial infrastructure is in place. We want to put in a repeatable mechanism for deploying our app into AKS.
+description: Our initial infrastructure is in place. We want to put in a repeatable mechanism for deploying our app into Azure Kubernetes Service (AKS).
 date:   2022-12-02 15:01:35 +0300
 author: Cloud Native on Azure
 image:  '/images/ep2-cn-azure.png'
