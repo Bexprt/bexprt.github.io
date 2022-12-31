@@ -4,7 +4,7 @@ title: "Episode 3: Deploying to Container Apps"
 description: Our initial infrastructure is in place. We want to put in a repeatable mechanism for deploying our app into Container Apps.
 date:   2022-12-03 05:01:35 +0300
 author: Cloud Native on Azure
-image:  '/images/ep2-cn-azure.png'
+image:  '/images/ep3logo.png'
 tags:   [azure, cloud-native, CI-CD, container-Apps]
 tags_color: '#007FFF'
 ---
