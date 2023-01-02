@@ -11,7 +11,7 @@ tags_color: '#007FFF'
 
 ## Watch the episode
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BY167dxwdF0" title="Episode 3: Deploying to Container Apps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LCgvF66Ir3w" title="Episode 3: Deploying to Container Apps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br/>
 
