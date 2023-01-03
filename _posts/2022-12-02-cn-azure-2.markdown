@@ -12,7 +12,7 @@ color: '#007FFF'
 
 ## Watch the episode
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7jx_-hsYfzU" title="Episode 2: Deploying to AKS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mIkMiU4F8Kw" title="Episode 2: Deploying to AKS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br/>
 
